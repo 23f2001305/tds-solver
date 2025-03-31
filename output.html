@@ -1,0 +1,80 @@
+<h1 id="weekly-step-count-analysis">Weekly Step Count Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Tracking our daily step count helps us stay active and compare
+progress over time. This report analyzes the number of steps walked each
+day for a week, comparing it with a friend’s step count.</p>
+<h2 id="methodology">Methodology</h2>
+<ul>
+<li>Data collected using a <strong>fitness tracker</strong>.<br />
+</li>
+<li>Steps recorded for <em>seven consecutive days</em>.<br />
+</li>
+<li>Compared with a friend’s step data.</li>
+</ul>
+<h2 id="step-count-data">Step Count Data</h2>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>My Steps</th>
+<th>Friend’s Steps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>7,500</td>
+<td>8,200</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>8,200</td>
+<td>7,900</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>6,700</td>
+<td>7,500</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>9,000</td>
+<td>8,800</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>10,200</td>
+<td>9,300</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>12,500</td>
+<td>11,800</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>11,300</td>
+<td>10,900</td>
+</tr>
+</tbody>
+</table>
+<h2 id="key-insights">Key Insights</h2>
+<ol type="1">
+<li><strong>Friday and Saturday</strong> had the highest step
+count.<br />
+</li>
+<li><strong>Wednesday</strong> had the lowest step count for both.<br />
+</li>
+<li>Maintaining at least <strong>8,000 steps per day</strong> is
+beneficial.</li>
+</ol>
+<h2 id="python-code-to-visualize-the-data">Python Code to Visualize the
+Data</h2>
+<p>```python import matplotlib.pyplot as plt</p>
+<p>days = [“Mon”, “Tue”, “Wed”, “Thu”, “Fri”, “Sat”, “Sun”] my_steps =
+[7500, 8200, 6700, 9000, 10200, 12500, 11300] friend_steps = [8200,
+7900, 7500, 8800, 9300, 11800, 10900]</p>
+<p>plt.plot(days, my_steps, label=“My Steps”, marker=“o”) plt.plot(days,
+friend_steps, label=“Friend’s Steps”, marker=“s”)</p>
+<p>plt.xlabel(“Days of the Week”) plt.ylabel(“Steps”) plt.title(“Step
+Count Comparison”) plt.legend() plt.show()</p>
